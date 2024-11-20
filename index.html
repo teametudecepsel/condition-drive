@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditions de Confidentialité</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 2em;
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 5% auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        ul {
+            text-align: left;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        li {
+            margin: 10px 0;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button.accept {
+            background-color: green;
+            color: white;
+        }
+        button.reject {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Conditions de Confidentialité</h1>
+        <p>
+            En accédant au drive, vous acceptez les conditions suivantes :
+        </p>
+        <ul>
+            <li>Les documents sont à usage privé uniquement.</li>
+            <li>Il est interdit de partager les contenus sans autorisation.</li>
+            <li>Respectez les droits d’auteur des auteurs des documents.</li>
+        </ul>
+        <div class="buttons">
+            <button class="accept" onclick="acceptConditions()">J’accepte</button>
+            <button class="reject" onclick="rejectConditions()">Je refuse</button>
+        </div>
+    </div>
+    <script>
+        function acceptConditions() {
+            window.location.href = "https://lien_du_drive.com"; // Remplacez par votre lien Drive
+        }
+
+        function rejectConditions() {
+            alert("Vous devez accepter les conditions pour accéder au drive.");
+        }
+    </script>
+</body>
+</html>
